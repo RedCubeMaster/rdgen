@@ -1,6 +1,7 @@
 FROM python:3.13-alpine
 
 RUN adduser -D user
+RUN chown -R user:user /opt/rdgen
 USER user
 
 WORKDIR /opt/rdgen
